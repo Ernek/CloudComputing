@@ -11,13 +11,17 @@ jobs:
         python-version: 3.8
     - name: Install dependencies 
       run: | 
+        cd project00/
         make install 
     - name: Lint with Pylint
       run: | 
+        cd project00/
         make lint
     - name: Test with Pytest 
       run: | 
+        cd project00/
         make test 
     - name: Format code with Python black 
       run: | 
+        cd project00/
         make format
